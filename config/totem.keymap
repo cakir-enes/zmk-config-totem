@@ -17,7 +17,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #include "../zmk-nodefree-config/helper.h"
-#include "../zmk-nodefree-config/keypos_def/keypos_36keys.h"
+#include "../zmk-nodefree-config/keypos_def/keypos_38keys.h"
 
 #define BASE 0
 #define NAV  1
@@ -82,10 +82,10 @@ label= "BASE"                              ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &kp Q       &kp W       &kp F       &kp P       &kp G           &kp J       &kp L       &kp U       &kp Y       &kp SEMI
-                &mt LGUI A  &mt LALT R  &mt LCTRL S &mt LSHFT T &kp D           &kp H       &mt RSHFT N &mt RCTRL E &mt RALT I  &mt RGUI O
-    &kp Q       &kp Z       &kp X       &kp C       &kp V       &kp B           &kp K       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp BSLH
-                                        &kp DEL   &lt NAV TAB   &kp SPACE       &kp RET   &lt SYM ESC   &kp BSPC
+                &kp W       &kp Y       &kp F       &kp P       &kp B               &kp Z       &kp F       &kp O       &kp U       &kp SEMI
+                &mt LSHFT C &mt LALT R  &mt LCTRL S &mt LGUI T  &kp G               &kp M       &mt RSHFT N &mt RCTRL E &mt RALT I  &mt RGUI A
+    &kp Q       &kp Q       &kp J       &kp V       &kp D       &kp K               &kp X       &kp H       &kp COMMA   &kp DOT     &kp FSLH    &kp BSLH
+                                        &kp DEL   &lt NAV TAB   &lt NAV SPACE       &ss_cw      &sl SYM     &kp BSPC
                         >;
                 };
 

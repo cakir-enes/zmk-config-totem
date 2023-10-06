@@ -25,6 +25,6 @@ up:
   echo "Xiao sense mounted, copying firmware to xiao sense..."
 
   cp -X ./firmware/totem_left-seeeduino_xiao_ble-zmk.uf2 /Volumes/XIAO-SENSE
-  #rm -rf ./firmware
+  rm -rf ./firmware
   
   echo 'Done!'

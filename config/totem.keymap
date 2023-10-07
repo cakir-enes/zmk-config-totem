@@ -76,7 +76,7 @@ ZMK_COMBO(combo_rbrc,   &kp RBRC,   RT1 RM1, ALL)
 
 ZMK_LAYER(default_layer,
                 &kp W        &kp L        &kp Y          &kp P           &kp B               &kp Z       &kp F        &kp O        &kp U        &kp SEMI
-                &hrm LSHFT C &hrm LALT R  &hrm LCTRL S   &hrm LGUI T     &kp G               &kp M       &hrm RSHFT N &hrm RCTRL E &hrm RALT I  &hrm RGUI A
+                &hrm LSHFT C &hrm LALT R  &hrm LCTRL S   &hrm LGUI T     &kp G               &kp M       &hrm RGUI N &hrm RCTRL E &hrm RALT I  &hrm RSHFT A
     &kp Q       &kp Q        &kp J        &kp V          &kp D           &kp K               &kp X       &kp H        &kp COMMA    &kp DOT      &kp FSLH    &kp BSLH
                                           &kp DEL        &lt NUM BSPC   &lt NAV SPACE        &ss_cw      &sl SYM      &kp BSPC
 )
@@ -99,15 +99,15 @@ ZMK_LAYER(sym_layer,
 
 
 ZMK_LAYER(num_layer,
-                 ___      &kp F9     &kp F10      &kp F11      &kp F12                                 LS(F13)       &kp N7      &kp N8   &kp N9  ___
-                ___       &kp F5     &kp F6       &kp F7       &kp F8                                  LS(F14)       &kp N4      &kp N5   &kp N6  ___
-    ___         ___       &kp F1     &kp F2       &kp F3       &kp F4                                  LS(F15)       &kp N1      &kp N2   &kp N3  ___    ___
+                 ___      &kp F9     &kp F10      &kp F11      &kp F12                                 &kp LS(F13)       &kp N7      &kp N8   &kp N9  ___
+                ___       &kp F5     &kp F6       &kp F7       &kp F8                                  &kp LS(F14)       &kp N4      &kp N5   &kp N6  ___
+    ___         ___       &kp F1     &kp F2       &kp F3       &kp F4                                  &kp LS(F15)       &kp N1      &kp N2   &kp N3  ___    ___
                                      ___          ___          ___                                  &kp N0    &kp COMMA   &kp DOT
 )
 
 ZMK_LAYER(adj_layer,
-                 ___      &kp F9     &kp F10      &kp F11      &kp F12                                 LS(F13)       &kp C_BRI_UP      &kp C_BRI_DN   &kp N9  ___
-                ___       &kp F5     &kp F6       &kp F7       &kp F8                                  LS(F14)       &kp C_VOL_UP      &kp C_VOL_DN   &kp K_MUTE  ___
-    ___         ___       &kp F1     &kp F2       &kp F3       &kp F4                                  LS(F15)       &kp C_PREV        &kp C_PP       &kp C_NEXT  ___    ___
-                                     ___          ___          ___                                  &kp N0    &kp COMMA   &kp DOT
+                 ___      &kp F9     &kp F10      &kp F11      &kp F12                                 &kp LS(F13)       &kp C_BRI_UP      &kp C_BRI_DN   &kp N9  ___
+                ___       &kp F5     &kp F6       &kp F7       &kp F8                                  &kp LS(F14)       &kp C_VOL_UP      &kp C_VOL_DN   &kp K_MUTE  ___
+    ___         ___       &kp F1     &kp F2       &kp F3       &kp F4                                  &kp LS(F15)       &kp C_PREV        &kp C_PP       &kp C_NEXT  ___    ___
+                                     ___          ___          ___                                     &kp N0    &kp COMMA   &kp DOT
 )

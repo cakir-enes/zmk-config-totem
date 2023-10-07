@@ -21,7 +21,7 @@
 
 #define ___ &trans
 
-#define meh(x) &kp LS(LC(LA(x)))
+#define meh(x) LS(LC(LA(x)))
 
 #define DEF 0  // layer shortcuts, must match order in which they are defined below
 #define NAV 1
@@ -54,23 +54,23 @@ ZMK_COMBO(combo_copy,   &kp LG(C),  LB2 LB3, ALL)  // Ctrl + C, active on all la
 
 
 ZMK_LAYER(default_layer,
-                &kp W       &kp Y       &kp F       &kp P       &kp B               &kp Z       &kp F       &kp O       &kp U       &kp SEMI
-                &mt LSHFT C &mt LALT R  &mt LCTRL S &mt LGUI T  &kp G               &kp M       &mt RSHFT N &mt RCTRL E &mt RALT I  &mt RGUI A
+                &kp W       &kp L       &kp Y       &kp P       &kp B               &kp Z       &kp F       &kp O       &kp U       &kp SEMI
+                &hrm LSHFT C &hrm LALT R  &hrm LCTRL S &hrm LGUI T  &kp G               &kp M       &hrm RSHFT N &hrm RCTRL E &hrm RALT I  &hrm RGUI A
     &kp Q       &kp Q       &kp J       &kp V       &kp D       &kp K               &kp X       &kp H       &kp COMMA   &kp DOT     &kp FSLH    &kp BSLH
                                         &kp DEL   &lt NAV TAB   &lt NAV SPACE       &ss_cw      &sl SYM     &kp BSPC
 )
 
 ZMK_LAYER(nav_layer,
-                &kp W       &kp LG(LS(TAB))       &kp LG(TAB) &swapper    &kp B               &kp Z       &kp F       &kp O       &kp U       &kp SEMI
-                meh(A)      meh(S)                meh(D)      meh(F)      meh(G)              &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT  &mt RGUI A
-    &kp Q       &kp Q       &kp J                 &kp V       &kp D       meh(B)               &kp X       &kp H       &kp COMMA   &kp DOT     &kp FSLH    &kp BSLH
-                                                  &kp DEL   &lt NAV TAB   &lt NAV SPACE       &ss_cw      &sl SYM     &kp BSPC
+                &kp W             &kp LC(TAB)       &kp LC(LS(TAB))     &swapper             &kp B               &kp Z       &kp F       &kp O       &kp U       &kp SEMI
+                &hrm LSFHT meh(A) &hrm LALT meh(S)  &hrm LCTRL meh(D)   &hrm LGUI meh(F)     &kp meh(G)          &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT  &hrm RGUI A
+    &kp Q       &kp Q             &kp J             &kp V               &kp D                meh(B)              &kp X       &kp H       &kp COMMA   &kp DOT     &kp FSLH    &kp BSLH
+                                                    &kp DEL             &lt NAV TAB          &lt NAV SPACE       &ss_cw      &sl SYM     &kp BSPC
 )
 
 
 ZMK_LAYER(sym_layer,
                 &kp W       &kp Y       &kp F       &kp P       &kp B               &kp Z       &kp F       &kp O       &kp U       &kp SEMI
-                &mt LSHFT C &mt LALT R  &mt LCTRL S &mt LGUI T  &kp G               &kp M       &mt RSHFT N &mt RCTRL E &mt RALT I  &mt RGUI A
+                &hrm LSHFT C &hrm LALT R  &hrm LCTRL S &hrm LGUI T  &kp G               &kp M       &hrm RSHFT N &hrm RCTRL E &hrm RALT I  &hrm RGUI A
     &kp Q       &kp Q       &kp J       &kp V       &kp D       &kp K               &kp X       &kp H       &kp COMMA   &kp DOT     &kp FSLH    &kp BSLH
                                         &kp DEL   &lt NAV TAB   &lt NAV SPACE       &ss_cw      &sl SYM     &kp BSPC
 )
@@ -78,7 +78,7 @@ ZMK_LAYER(sym_layer,
 
 ZMK_LAYER(num_layer,
                 &kp W       &kp Y       &kp F       &kp P       &kp B               &kp Z       &kp F       &kp O       &kp U       &kp SEMI
-                &mt LSHFT C &mt LALT R  &mt LCTRL S &mt LGUI T  &kp G               &kp M       &mt RSHFT N &mt RCTRL E &mt RALT I  &mt RGUI A
+                &hrm LSHFT C &hrm LALT R  &hrm LCTRL S &hrm LGUI T  &kp G               &kp M       &hrm RSHFT N &hrm RCTRL E &hrm RALT I  &hrm RGUI A
     &kp Q       &kp Q       &kp J       &kp V       &kp D       &kp K               &kp X       &kp H       &kp COMMA   &kp DOT     &kp FSLH    &kp BSLH
                                         &kp DEL   &lt NAV TAB   &lt NAV SPACE       &ss_cw      &sl SYM     &kp BSPC
 )

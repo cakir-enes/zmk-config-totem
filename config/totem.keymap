@@ -89,10 +89,11 @@ ZMK_LAYER(nav_layer,
 
 
 ZMK_LAYER(sym_layer,
-                &kp AT       &kp EXCL    &kp AMPS    &kp PIPE       &kp TILDE               ___         &kp GRAVE   &kp HASH    ___      ___
-                &kp STAR     &kp MINUS   &kp UNDER   &kp EQUAL      &kp DOLLAR              &kp CARET   &kp COLON   &kp SQT     &kp DQT  &kp SEMI
-    ___         &kp BLSH     ___         ___         &kp PLUS       ___                     ___         &kp PERC    &kp LT      &kp GT   &kp QMARK  ___
-                                         ___         ___            ___                     ___         ___         ___
+                ___               &kp LC(LS(TAB))    &kp LC(TAB)         &swapper             &cycler                 &kp Z       &kp F       &kp O       &kp U       &kp SEMI
+                &hrm LSHFT meh(A) &hrm LALT meh(S)  &hrm LCTRL meh(D)   &hrm LGUI meh(F)     &kp meh(G)              &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT  &hrm RGUI A
+    ___         ___               ___               ___                 ___                  &kp meh(B)              &kp X       &kp H       &kp COMMA   &kp DOT     &kp FSLH    ___
+                                                    ___                 ___                  ___                     ___         ___          ___
+
 )
 
 

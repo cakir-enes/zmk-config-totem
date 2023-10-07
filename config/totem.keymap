@@ -81,24 +81,24 @@ ZMK_LAYER(default_layer,
 )
 
 ZMK_LAYER(nav_layer,
-                ___               &kp LC(LS(TAB)    &kp LC(TAB)         &swapper             &cycler             &kp Z       &kp F       &kp O       &kp U       &kp SEMI
-                &hrm LSHFT meh(A) &hrm LALT meh(S)  &hrm LCTRL meh(D)   &hrm LGUI meh(F)     &kp meh(G)          &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT  &hrm RGUI A
-    &kp Q       ___               ___               ___                 &kp D                &kp meh(B)          &kp X       &kp H       &kp COMMA   &kp DOT     &kp FSLH    &kp BSLH
-                                                    &kp DEL             &lt NAV TAB          &lt NAV SPACE       &ss_cw      &sl SYM     &kp BSPC
+                ___               &kp LC(LS(TAB)    &kp LC(TAB)         &swapper             &cycler                 &kp Z       &kp F       &kp O       &kp U       &kp SEMI
+                &hrm LSHFT meh(A) &hrm LALT meh(S)  &hrm LCTRL meh(D)   &hrm LGUI meh(F)     &kp meh(G)              &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT  &hrm RGUI A
+    ___         ___               ___               ___                 ___                  &kp meh(B)              &kp X       &kp H       &kp COMMA   &kp DOT     &kp FSLH    ___
+                                                    ___                 ___                  ___                     ___         ___          ___
 )
 
 
 ZMK_LAYER(sym_layer,
                 &kp AT       &kp EXCL    &kp AMPS    &kp PIPE       &kp TILDE               ___         &kp GRAVE   &kp HASH    ___      ___
                 &kp STAR     &kp MINUS   &kp UNDER   &kp EQUAL      &kp DOLLAR              &kp CARET   &kp COLON   &kp SQT     &kp DQT  &kp SEMI
-    ___         &kp BLSH     ___         ___         &kp PLUS       ___                     ___         &kp PERC    &kp LT      &kp GT   &kp QMARK    &kp BSLH
+    ___         &kp BLSH     ___         ___         &kp PLUS       ___                     ___         &kp PERC    &kp LT      &kp GT   &kp QMARK  ___
                                          ___         ___            ___                     ___         ___         ___
 )
 
 
 ZMK_LAYER(num_layer,
-                &kp W       &kp Y       &kp F       &kp P       &kp B               &kp Z       &kp N7      &kp N8   &kp N9  &kp SEMI
-                &hrm LSHFT C &hrm LALT R  &hrm LCTRL S &hrm LGUI T  &kp G           &kp M       &kp N4      &kp N5   &kp N6  &kp FSLH
-    &kp Q       &kp Q       &kp J       &kp V       &kp D       &kp K               &kp X       &kp N1      &kp N2   &kp N3  &kp FSLH    &kp BSLH
-                                        &kp DEL   &lt NAV TAB   &lt NAV SPACE       &kp N0      &kp COMMA   &kp DOT
+                ___       ___       ___       ___       ___                                  ___       &kp N7      &kp N8   &kp N9  ___
+                ___       ___       ___       ___       ___                                  ___       &kp N4      &kp N5   &kp N6  ___
+    ___         ___       ___       ___       ___       ___                                  ___       &kp N1      &kp N2   &kp N3  ___    ___
+                                        ___   ___       ___                                  &kp N0    &kp COMMA   &kp DOT
 )

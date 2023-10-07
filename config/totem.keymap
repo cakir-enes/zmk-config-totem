@@ -91,7 +91,7 @@ ZMK_LAYER(nav_layer,
 ZMK_LAYER(sym_layer,
                 &kp AT       &kp EXCL    &kp AMPS    &kp PIPE       &kp TILDE               ___         &kp GRAVE   &kp HASH    ___      ___
                 &kp STAR     &kp MINUS   &kp UNDER   &kp EQUAL      &kp DOLLAR              &kp CARET   &kp COLON   &kp SQT     &kp DQT  &kp SEMI
-           ___  &kp BLSH     &kp MINUS   &kp UNDER   &kp PLUS       &kp DOLLAR              &kp CARET   &kp PERC    &kp LT      &kp GT   &kp QMARK ___
+           ___  &kp STAR     ___         ___         &kp PLUS       ___                     ___         &kp PERC    &kp LT      &kp GT   &kp QMARK ___
                                          ___         ___            ___                     ___         ___         ___
 
 )

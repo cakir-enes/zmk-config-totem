@@ -49,21 +49,40 @@ ZMK_BEHAVIOR(swapper, tri_state,
     ignored-key-positions = <LT2>;
 )
 
+// one handed window cycler
+ZMK_BEHAVIOR(cycler, tri_state,
+    bindings = <&kt LGUI>, <&kp GRAVE>, <&kt LGUI>;
+    ignored-key-positions = <LT2>;
+)
 
-ZMK_COMBO(combo_copy,   &kp LG(C),  LB2 LB3, ALL)  // Ctrl + C, active on all layers
+ZMK_COMBO(combo_copy,   &kp LG(C),  LB2 LB3, ALL)
+ZMK_COMBO(combo_paste,  &kp LG(V),  LB1 LB2, ALL)
+ZMK_COMBO(combo_cut,    &kp LG(X),  LB1 LB3, ALL)
+ZMK_COMBO(combo_undo,   &kp LG(Z),  LB1 LB2 LB3, ALL)
+
+ZMK_COMBO(combo_esc,    &kp ESC,    LM1 LM2, ALL)
+ZMK_COMBO(combo_enter,  &kp ENTER,  LM2 LM3, ALL)
+
+ZMK_COMBO(combo_lpar,   &kp LPAR,   LT2 LM1, ALL)
+ZMK_COMBO(combo_lbkt,   &kp LBKT,   LT2 LT1, ALL)
+ZMK_COMBO(combo_lbrc,   &kp LBRC,   LT1 LM1, ALL)
+
+ZMK_COMBO(combo_rpar,   &kp RPAR,   RT2 RM1, ALL)
+ZMK_COMBO(combo_rbkt,   &kp RBKT,   RT2 RT1, ALL)
+ZMK_COMBO(combo_rbrc,   &kp RBRC,   RT1 RM1, ALL)
 
 
 ZMK_LAYER(default_layer,
-                &kp W       &kp L       &kp Y       &kp P       &kp B               &kp Z       &kp F        &kp O        &kp U        &kp SEMI
-                &hrm LSHFT C &hrm LALT R  &hrm LCTRL S &hrm LGUI T  &kp G           &kp M       &hrm RSHFT N &hrm RCTRL E &hrm RALT I  &hrm RGUI A
-    &kp Q       &kp Q       &kp J       &kp V       &kp D       &kp K               &kp X       &kp H        &kp COMMA    &kp DOT      &kp FSLH    &kp BSLH
-                                        &kp DEL   &lt NAV TAB   &lt NAV SPACE       &ss_cw      &sl SYM      &kp BSPC
+                &kp W        &kp L        &kp Y          &kp P           &kp B               &kp Z       &kp F        &kp O        &kp U        &kp SEMI
+                &hrm LSHFT C &hrm LALT R  &hrm LCTRL S   &hrm LGUI T     &kp G               &kp M       &hrm RSHFT N &hrm RCTRL E &hrm RALT I  &hrm RGUI A
+    &kp Q       &kp Q        &kp J        &kp V          &kp D           &kp K               &kp X       &kp H        &kp COMMA    &kp DOT      &kp FSLH    &kp BSLH
+                                          &kp DEL        &lt NAV SPACE   &lt NAV SPACE       &ss_cw      &sl SYM      &kp BSPC
 )
 
 ZMK_LAYER(nav_layer,
-                &kp W             &kp LC(TAB)       &kp LC(LS(TAB))     &swapper             &kp B               &kp Z       &kp F       &kp O       &kp U       &kp SEMI
+                &kp W             &kp LC(TAB)       &kp LC(LS(TAB))     &swapper             &cycler              &kp Z       &kp F       &kp O       &kp U       &kp SEMI
                 &hrm LSHFT meh(A) &hrm LALT meh(S)  &hrm LCTRL meh(D)   &hrm LGUI meh(F)     &kp meh(G)          &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT  &hrm RGUI A
-    &kp Q       &kp Q             &kp J             &kp V               &kp D                &kp meh(B)              &kp X       &kp H       &kp COMMA   &kp DOT     &kp FSLH    &kp BSLH
+    &kp Q       &kp Q             &kp J             &kp V               &kp D                &kp meh(B)          &kp X       &kp H       &kp COMMA   &kp DOT     &kp FSLH    &kp BSLH
                                                     &kp DEL             &lt NAV TAB          &lt NAV SPACE       &ss_cw      &sl SYM     &kp BSPC
 )
 

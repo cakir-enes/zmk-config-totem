@@ -27,6 +27,7 @@
 #define NAV 1
 #define SYM 2
 #define NUM 3
+#define ADJ 4
 
 
 ZMK_BEHAVIOR(hrm, hold_tap,
@@ -84,7 +85,7 @@ ZMK_LAYER(nav_layer,
                 ___               &kp LC(LS(TAB))    &kp LC(TAB)         &swapper             &cycler                 &kp Z       &kp F       &kp O       &kp U       &kp SEMI
                 &hrm LSHFT meh(A) &hrm LALT meh(S)  &hrm LCTRL meh(D)   &hrm LGUI meh(F)     &kp meh(G)              &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT  &hrm RGUI A
     ___         ___               ___               ___                 ___                  &kp meh(B)              &kp X       &kp H       &kp COMMA   &kp DOT     &kp FSLH    ___
-                                                    ___                 ___                  ___                     ___         ___          ___
+                                                    ___                 ___                  ___                     &mo ADJ         ___          ___
 )
 
 
@@ -101,5 +102,12 @@ ZMK_LAYER(num_layer,
                  ___      &kp F9     &kp F10      &kp F11      &kp F12                                 LS(F13)       &kp N7      &kp N8   &kp N9  ___
                 ___       &kp F5     &kp F6       &kp F7       &kp F8                                  LS(F14)       &kp N4      &kp N5   &kp N6  ___
     ___         ___       &kp F1     &kp F2       &kp F3       &kp F4                                  LS(F15)       &kp N1      &kp N2   &kp N3  ___    ___
+                                     ___          ___          ___                                  &kp N0    &kp COMMA   &kp DOT
+)
+
+ZMK_LAYER(adj_layer,
+                 ___      &kp F9     &kp F10      &kp F11      &kp F12                                 LS(F13)       &kp C_BRI_UP      &kp C_BRI_DN   &kp N9  ___
+                ___       &kp F5     &kp F6       &kp F7       &kp F8                                  LS(F14)       &kp C_VOL_UP      &kp C_VOL_DN   &kp K_MUTE  ___
+    ___         ___       &kp F1     &kp F2       &kp F3       &kp F4                                  LS(F15)       &kp C_PREV        &kp C_PP       &kp C_NEXT  ___    ___
                                      ___          ___          ___                                  &kp N0    &kp COMMA   &kp DOT
 )

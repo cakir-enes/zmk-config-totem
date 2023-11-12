@@ -73,10 +73,11 @@ ZMK_COMBO(combo_paste,  &kp LG(V),  LB1 LB2, ALL)
 ZMK_COMBO(combo_cut,    &kp LG(X),  LB1 LB3, ALL)
 ZMK_COMBO(combo_undo,   &kp LG(Z),  LB1 LB2 LB3, ALL)
 
-ZMK_COMBO(combo_esc,    &kp LPAR,    LM1 LM2, ALL)
-ZMK_COMBO(combo_enter,  &kp ESC,  LM2 LM3, ALL)
-ZMK_COMBO(combo_tab,    &kp TAB,    LT3 LT2, ALL)
-ZMK_COMBO(combo_bktt,    &kp LBKT,    LM1 LT2, ALL)
+ZMK_COMBO(combo_esc,    &kp LPAR,      LM1 LM2, ALL)
+ZMK_COMBO(combo_enter,  &kp ESC,       LM2 LM3, ALL)
+ZMK_COMBO(combo_tab,    &kp TAB,       LT3 LT2, ALL)
+ZMK_COMBO(combo_bktt,   &kp LBKT,      LM1 LT2, ALL)
+ZMK_COMBO(combo_swap,   &kp LG(TAB),   LT2 LM2, ALL)
 
 ZMK_COMBO(combo_bspc,   &kp BSPC,   RM1 RM2, ALL)
 ZMK_COMBO(combo_delw,   &kp LA(BSPC),   RM2 RM3, ALL)
@@ -90,7 +91,7 @@ ZMK_COMBO(combo_dqt,    &kp DQT,   RT1 RT2, ALL)
 
 
 ZMK_LAYER(default_layer,
-                &kp W        &kp L        &kp Y          &kp P           &kp B               &kp Z       &kp F        &kp O        &kp U        &kp SEMI
+                &kp W        &kp L        &kp Y          &kp P           &kp B               &kp Z       &kp F        &kp O        &kp U        &sk LSHFT
                 &hrm LSHFT C &hrm LALT R  &hrm LCTRL S   &hrm LGUI T     &kp G               &kp M       &hrm RGUI N &hrm RCTRL E &hrm RALT I  &hrm RSHFT A
     &kp W       &kp Q        &kp J        &kp V          &kp D           &kp K               &kp X       &kp H        &kp COMMA    &kp DOT      &kp FSLH    &kp BSLH
                                           &kp DEL        &lt NUM ENTER   &lt NAV SPACE       &ss_cw      &sl SYM      &kp LGUI
@@ -106,18 +107,18 @@ ZMK_LAYER(nav_layer,
 
 ZMK_LAYER(sym_layer,
                 &kp AT       &kp CARET   &kp DOLLAR  &kp PERCENT    &kp TILDE               &kp GRAVE    &kp EXCL   &kp AMPS    &kp PIPE  ___
-                &kp MINUS    &kp STAR    &kp UNDER   &kp COLON      &kp BSLH                 &kp CARET    &kp RPAR   &kp RBKT     &kp RBRC   &kp SEMI
-           ___  &kp PLUS     ___         ___         &kp PLUS       ___                     &kp GRAVE    &kp SEMI   &kp LT      &kp GT    &kp QMARK ___
-                                         ___         ___            &kp EQUAL                     ___         ___         ___
+                &kp MINUS    &kp STAR    &kp UNDER   &kp COLON      &kp BSLH                &kp CARET    &kp RPAR   &kp RBKT    &kp RBRC   &kp HASH
+           ___  &kp PLUS     ___         ___         &kp PLUS       &kp GRAVE               &kp GRAVE    &kp SEMI   &kp LT      &kp GT    &kp QMARK ___
+                                         ___         ___            &kp EQUAL               ___         ___         ___
 
 )
 
 
 ZMK_LAYER(num_layer,
-                 ___      &kp F9     &kp F10      &kp F11      &kp F12                                 &kp LS(F13)       &kp N7      &kp N8   &kp N9  ___
-                ___       &kp F17     &kp F18       &kp F19       &kp F20                                  &kp LS(F14)       &kp N4      &kp N5   &kp N6  ___
-    ___         ___       &kp F13     &kp F14       &kp F15       &kp F16                                  &kp LS(F15)       &kp N1      &kp N2   &kp N3  ___    ___
-                                     ___          ___          ___                                  &kp N0    &kp COMMA   &kp DOT
+                 ___      &kp F9     &kp F10      &kp F11      &kp F12                             &kp LS(F13)       &kp N7      &kp N8   &kp N9  ___
+                ___       &kp F17     &kp F18       &kp F19    &kp F20                             &kp LS(F14)       &kp N4      &kp N5   &kp N6  ___
+    ___         ___       &kp F13     &kp F14       &kp F15    &kp F16                             &kp LS(F15)       &kp N1      &kp N2   &kp N3  ___    ___
+                                     ___          ___          ___                                 &kp N0    &kp COMMA   &kp DOT
 )
 
 ZMK_LAYER(adj_layer,

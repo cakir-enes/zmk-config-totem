@@ -3,13 +3,13 @@
 //                                                        ▄▀▀▀▄  ▄  ▄▀▀▀▄  ▄  ▄▀▀▀▄  █  ▄▀▀▀▄
 //                                                        █   █  █  █   █  █  █   █  █  █   █
 //                                                         ▀▀▀   █   ▀▀▀   █   ▀▀▀   ▀   ▀▀▀
-//                                                               █      ▄▄▄█▄▄▄    █   █  
+//                                                               █      ▄▄▄█▄▄▄    █   █
 //                                                               ▀      █  █  █     █▄█
 //                                                             ▀▀▀▀▀    █  █  █      ▀
 //                                                                      ▀  ▀  ▀
 //
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-       
+
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
@@ -68,33 +68,11 @@ ZMK_BEHAVIOR(cycler, tri_state,
 
 
 
-ZMK_COMBO(combo_copy,   &kp LG(C),  LB2 LB3, ALL)
-ZMK_COMBO(combo_paste,  &kp LG(V),  LB1 LB2, ALL)
-ZMK_COMBO(combo_cut,    &kp LG(X),  LB1 LB3, ALL)
-ZMK_COMBO(combo_undo,   &kp LG(Z),  LB1 LB2 LB3, ALL)
-
-ZMK_COMBO(combo_esc,    &kp LPAR,      LM1 LM2, ALL)
-ZMK_COMBO(combo_enter,  &kp ESC,       LM2 LM3, ALL)
-ZMK_COMBO(combo_tab,    &kp TAB,       LT3 LT2, ALL)
-ZMK_COMBO(combo_bktt,   &kp LBKT,      LM1 LT2, ALL)
-ZMK_COMBO(combo_swap,   &kp LG(TAB),   LT2 LM2, ALL)
-
-ZMK_COMBO(combo_bspc,   &kp BSPC,   RM1 RM2, ALL)
-ZMK_COMBO(combo_delw,   &kp LA(BSPC),   RM2 RM3, ALL)
-ZMK_COMBO(combo_lbkt,   &kp LBKT,   RB1 RB2, ALL)
-ZMK_COMBO(combo_lbrc,   &kp LBRC,   LT1 LM1, ALL)
-
-ZMK_COMBO(combo_rpar,   &kp RPAR,   RM2 RM3, ALL)
-ZMK_COMBO(combo_rbkt,   &kp RBKT,   RB2 RB3, ALL)
-ZMK_COMBO(combo_sqt,    &kp SQT,   RT1 RM1, ALL)
-ZMK_COMBO(combo_dqt,    &kp DQT,   RT1 RT2, ALL)
-
-
 ZMK_LAYER(default_layer,
-                &kp W        &kp L        &kp Y          &kp P           &kp B               &kp Z       &kp F        &kp O        &kp U        &sk LSHFT
-                &hrm LSHFT C &hrm LALT R  &hrm LCTRL S   &hrm LGUI T     &kp G               &kp M       &hrm RGUI N &hrm RCTRL E &hrm RALT I  &hrm RSHFT A
-    &kp W       &kp Q        &kp J        &kp V          &kp D           &kp K               &kp X       &kp H        &kp COMMA    &kp DOT      &kp FSLH    &kp BSLH
-                                          &kp DEL        &lt NUM ENTER   &lt NAV SPACE       &ss_cw      &sl SYM      &kp LGUI
+          &kp Q         &kp W       &kp E         &kp R         &kp T             &kp Y         &kp H         &kp U         &kp I         &kp O
+          &kp A         &kp S        &kp D         &kp F          &kp G            &kp H         &kp J         &kp K  &kp L   &kp SEMI
+          &kp Z         &kp X        &kp C         &kp V         &kp B             &kp N         &kp M         &kp COMMA     &kp DOT       &kp SLASH
+                                     &kp LALT       &kp LGUI   &kp SPC       &kp RGUI      &kp RALT      &kp RCTL
 )
 
 ZMK_LAYER(nav_layer,

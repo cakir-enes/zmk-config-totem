@@ -67,11 +67,10 @@ ZMK_BEHAVIOR(cycler, tri_state,
 */
 
 
-
 ZMK_LAYER(default_layer,
-          &kp Q         &kp W       &kp E         &kp R         &kp T             &kp Y         &kp H         &kp U         &kp I         &kp O
-          &kp A         &kp S        &kp D         &kp F          &kp G            &kp H         &kp J         &kp K  &kp L   &kp SEMI
-          &kp Z         &kp X        &kp C         &kp V         &kp B             &kp N         &kp M         &kp COMMA     &kp DOT       &kp SLASH
+          &kp Q         &kp W       &kp E         &kp R         &kp T             &kp Y         &kp U         &kp I         &kp O    &kp P
+          &kp A         &kp S        &kp D         &kp F          &kp G            &kp H         &kp J         &kp K         &kp L   &kp SEMI
+    &kp Q  &kp Z         &kp X        &kp C         &kp V         &kp B             &kp N         &kp M         &kp COMMA   &kp DOT  &kp SLASH &kp P
                                      &kp LALT       &kp LGUI   &kp SPC       &kp RGUI      &kp RALT      &kp RCTL
 )
 
